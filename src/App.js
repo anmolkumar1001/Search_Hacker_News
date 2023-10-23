@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import SearchBar from "./components/SearchBar";
+import PostDetails from "./components/PostDetails";
+import "./App.css";
 
-function App() {
+const App = () => {
+  const [postID, setPostID] = useState(null);
+
+  const handlePostClick = (objectID) => {
+    setPostID(objectID);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <h1 className="app-title">Hacker News Reader</h1>
+      {postID ? (
+        <PostDetails objectID={postID} />
+      ) : (
+        <SearchBar onPostClick={handlePostClick} />
+      )}
     </div>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,48 @@
+.search-container {
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  color: #0074d9;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+ul.search-results {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #0074d9;
+}
+
+a:visited {
+  color: #777;
+}

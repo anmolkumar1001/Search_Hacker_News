@@ -1,0 +1,38 @@
+.post-container {
+  text-align: left;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.post-title {
+  color: #0074d9;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.post-points {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.post-comments {
+  list-style-type: none;
+  padding: 0;
+}
+
+.post-comment-text {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.loading {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+}
